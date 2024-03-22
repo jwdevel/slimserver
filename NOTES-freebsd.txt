@@ -1,0 +1,11 @@
+This branch contains some changes to allow running on FreeBSD.
+
+These changes are largely based on those found in the FreeBSD port (https://www.freshports.org/audio/logitechmediaserver/).
+However, the port generally lags a bit behind latest developments.
+
+These changes allow one to build fore FreeBSD locally, outside of the ports infrastructure.
+
+For reference, see the port's Makefile: https://cgit.freebsd.org/ports/tree/audio/logitechmediaserver/Makefile
+And also its supplemental files: https://cgit.freebsd.org/ports/tree/audio/logitechmediaserver/files
+
+Some of the changes are directly incorporated into the source tree (eg: using 'HUP' rather than 'USR1' signal), while other changes are standalone files, in the "files-freebsd" directory.
